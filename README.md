@@ -16,8 +16,18 @@
 * Added basic elememts to the javascript
 * Updated the README file
 
-### Version 1.3 - 
+### Version 1.3 - HTML High Score Section
 * Added Answers for questions
 * Made a final score section
 * Made a High Score Section
 * Made a h3 section in CSS
+
+### Version 1.4 - HTML webpage
+* Made the outline for the webpage through HTML
+
+### Version 1,5 - 
+* Adjusted the CSS style to account for paragraph
+* Adjusted the two different sections
+* Button changes for the color and button hover
+* Added ticker settings in CSS
+* Added notes to the javascript section
