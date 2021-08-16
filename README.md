@@ -32,3 +32,14 @@
 * Added ticker settings in CSS
 * Added notes to the javascript section
 
+### Version 1.6 - Questions and High Scores
+* Added the questions section to the javascript
+* Changed the javascript to reflect gameover and highscore
+
+### Version 1.7 - 
+* Changed the h3 header to highscore-header in style.css
+* Added a High Score Page Section
+* Started to work on the high score header section
+* Added a High score header section to make it look better
+
+

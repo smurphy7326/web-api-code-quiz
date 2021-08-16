@@ -38,6 +38,8 @@ input {
     margin: 0 auto;
 }
 
+/* button Code with help from the Run-buddy lesson */
+
 button {
     display: inline-block;
     font-family: 'Times New Roman', Times, serif;
@@ -52,6 +54,8 @@ button {
     margin-top: 5px;
 }
 
+/* Button Hover Section */
+
 button:hover {
     box-shadow: 4px 2px 7px rgba(25, 52, 202, 0.733);
 }
@@ -61,6 +65,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
 }
+
+/* Ticker for the countdown */
 
 .ticker {
     font-family: 'Times New Roman', Times, serif;
@@ -86,16 +92,37 @@ button:hover {
     align-items: center;
 }
 
+/* When you get a high score */
+
 .highscore {
     height: 20px;
     border: solid 3px;
 }
 
+/* High Score Page Section*/
 
-
-h3 {
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: 10px;
+.high-scorePage {
+    display: none;
+    width: 60%;
+    border: solid;
+    border-color: rgba(74, 94, 209, 0.616);
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+    background: lightskyblue;
 }
+
+/* High Score Header Section*/
+
+.highscore-header {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom-style: solid;
+    margin-bottom: 5px;
+    background-color:5462d8;
+    color:rgb(138, 138, 138);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
 
 
