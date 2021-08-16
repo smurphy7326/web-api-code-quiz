@@ -25,9 +25,10 @@
 ### Version 1.4 - HTML webpage
 * Made the outline for the webpage through HTML
 
-### Version 1,5 - 
+### Version 1,5 - Colors and Hovers
 * Adjusted the CSS style to account for paragraph
-* Adjusted the two different sections
+* Adjusted the two different header sections
 * Button changes for the color and button hover
 * Added ticker settings in CSS
 * Added notes to the javascript section
+

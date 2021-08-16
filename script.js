@@ -3,8 +3,8 @@
 var quizBody = document.getElementById("quiz");
 var resultsEl = document.getElementById("result");
 var finalScoreEl = document.getElementById("finalScore");
-var
-var
+var gameoverDiv = document.getElementById("gameover");
+var 
 var
 var
 var
@@ -15,10 +15,82 @@ var
 var quizQuestions = [{
     question:
     choiceA:
-    ChoiceB:
-    ChoiceC:
-    ChoiceD:
-}]
+    choiceB:
+    choiceC:
+    choiceD:}
+
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+    
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+
+    {question
+    choiceA:
+    choiceB:
+    choiceC:
+    choiceD:
+    correctAnswer:
+    }
+]
 
 // Ticker portion of the code Had AskBCS help with this portion
 tickerinterval = setInterval(function() {

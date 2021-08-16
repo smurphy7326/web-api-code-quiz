@@ -71,6 +71,26 @@ button:hover {
     text-align: center;
 }
 
+.quiz {
+    display: none;
+}
+
+.result {
+    display: none;
+}
+
+.gameover {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highscore {
+    height: 20px;
+    border: solid 3px;
+}
+
 
 
 h3 {
