@@ -10,4 +10,14 @@
 * Added a background color
 * Updated the README
 
-### Version 1.2 - 
+### Version 1.2 - Basic Text
+* Added some basic text to the HTML section
+* Added elements for the header 2 section
+* Added basic elememts to the javascript
+* Updated the README file
+
+### Version 1.3 - 
+* Added Answers for questions
+* Made a final score section
+* Made a High Score Section
+* Made a h3 section in CSS
