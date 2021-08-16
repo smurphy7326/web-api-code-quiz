@@ -7,8 +7,29 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="container">
 
-    
+        <header id="starterpage">
+            <h2> This quiz will test your knowledge of various coding and web design concepts</h2>
+        <button id ="startbtn">Start Coding Quiz</button>
+        <button id="StartPageHighScore" onclick="showHighscore()">High Scores</button>
+        </header>
+
+        <section id="quiz">
+            <div id="timer"> Time left: </div>
+            <div id="questions"><f> Questions Proxy</f></div>
+                <button id="A" onclick="checkanswer('A')">A</button>
+                <button id="B" onclick="checkanswer('B')">B</button>
+                <button id="C" onclick="checkanswer('C')">C</button>
+                <button id="D" onclick="checkanswer('D')">D</button>
+            <div id="result"></div>
+        </section>
+
+
+        
+    </div>
+
+
 </body>
     
 

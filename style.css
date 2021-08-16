@@ -2,3 +2,13 @@
     background-color: rgb(220, 236, 220)
 }
 
+h2{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+input {
+    text-align: center;
+}
+
+
