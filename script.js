@@ -136,7 +136,31 @@ function startQuiz(){
     quizBody.style.display = "block";
 }
 
-// End Page Screen for the end of the ticker 
+// Ending Screen for the end of the ticker. Final message
+
+function showscore() {
+    quizBody.style.display = "none";
+    gameoverDiv.style.display = "none";
+    clearInterval(timerInterval);
+    highscoreInputname.value = "";
+    finalScoreEl.innerHTML = "You got " + score + "out of" + quizQuestions.length + " correct!";
+}
+
+// the high score should go to another page, possibly fix later in notes
+// Ask BCS helped with this part
+
+submitScoreBtn.addEventListener("click", function highscore() {
+    alert("Initials cannot be blank");
+    return false;
+} else {
+    var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+    var currentUser = highscoreInputname.value.trim();
+    var currentHighScore = {
+        name : currentUser,
+        score : score
+    },
+}
+
 
 
 // Ticker portion of the code Had AskBCS help with this portion
