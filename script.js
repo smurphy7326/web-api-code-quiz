@@ -4,11 +4,12 @@ var quizBody = document.getElementById("quiz");
 var resultsEl = document.getElementById("result");
 var finalScoreEl = document.getElementById("finalScore");
 var gameoverDiv = document.getElementById("gameover");
+var questionsEl = document.getElementById("questions");
+var highscoreInputname = document.getElementById("initials");
+var highscoreContainer = document.getElementById("highscoreContainer");
+var highscoreDiv = document.getElementById("highscore-Page");
+var quizTicker = document.getElementById("ticker");
 var 
-var
-var
-var
-var
 
 // Quiz Question Section 
 // Make sure there are 10 questions
@@ -32,64 +33,57 @@ var quizQuestions = [{
     choiceB: "<h6>",
     choiceC: "<h2>",
     choiceD: "<h1>",
-    correctAnswer: "D"
-    }
+    correctAnswer: "D"},
 
-    {question: ""
-    choiceA:
-    choiceB:
-    choiceC:
-    choiceD:
-    correctAnswer:
-    }
+    {question: "What does CSS stand for?",
+    choiceA: "Cascading Style Sheets",
+    choiceB: "Cascading Style Scores",
+    choiceC: "Contionuing Style Sheets",
+    choiceD: "Style Cascading Sheets",
+    correctAnswer: "A"},
 
-    {question
-    choiceA:
-    choiceB:
-    choiceC:
-    choiceD:
-    correctAnswer:
-    }
+    {question: "Which of the following are used to determine the height of an image?",
+    choiceA: "width",
+    choiceB: "height",
+    choiceC: "border",
+    choiceD: "hover",
+    correctAnswer: "B"},
 
-    {question
-    choiceA:
-    choiceB:
-    choiceC:
-    choiceD:
-    correctAnswer:
-    }
-
-    {question
-    choiceA:
-    choiceB:
-    choiceC:
-    choiceD:
-    correctAnswer:
-    }
+    {question: "The CSS property used to control the elements font-size is",
+    choiceA: "font-size",
+    choiceB: "font-height",
+    choiceC: "font-color",
+    choiceD: "none of the above",
+    correctAnswer: "A"},
     
-    {question
-    choiceA:
-    choiceB:
-    choiceC:
-    choiceD:
-    correctAnswer:
-    }
+    {question: "Inside which HTML element do we put the javascript?",
+    choiceA: "<javascript>",
+    choiceB: "<script>",
+    choiceC: "<js>",
+    choiceD: "<scripting>",
+    correctAnswer: "B"},
 
-    {question
-    choiceA:
-    choiceB:
-    choiceC:
-    choiceD:
-    correctAnswer:
-    }
+    {question: "Which of the following is not a javascript data type?",
+    choiceA: "Boolean",
+    choiceB: "Number",
+    choiceC: "Underfined",
+    choiceD: "Float",
+    correctAnswer: "D"},
 
-    {question
-    choiceA:
-    choiceB:
-    choiceC:
-    choiceD:
-    correctAnswer:
-    }
+    {question: "How do you create an unordered list in HTML?",
+    choiceA: "<li>",
+    choiceB: "<ol>",
+    choiceC: "<i>",
+    choiceD: "<ul>",
+    correctAnswer: "D"},
+
+
+    {question: "In Javascript what is a block of code called that is used to perform a certain task?",
+    choiceA: "String",
+    choiceB: "Variable",
+    choiceC: "Function",
+    choiceD: "Declearation",
+    correctAnswer: "A"},
 ]
 
 // Ticker portion of the code Had AskBCS help with this portion

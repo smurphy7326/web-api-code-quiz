@@ -45,5 +45,9 @@
 ### Version 1.8 - 
 * Added a high score section
 * Added a final score section in the CSS section
-* 
+
+### Version 1.9 - 
+* Worked on questions for the quiz
+
+
 
