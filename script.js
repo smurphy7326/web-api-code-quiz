@@ -136,6 +136,24 @@ function startQuiz(){
     quizBody.style.display = "block";
 }
 
+// Check Answer function
+function checkAnswer(answer) {
+    correct = quizQuestions[currentQuestionIndex].correctAnswer;
+    if (answer === correct && currentQuestionIndex === finalQuestionIndex) {
+        score++;
+        alert("This is correct!");
+        currentQuestionIndex++;
+        generateQuizQuestion();
+
+    } else if (answer === correct && currentQuestionIndex === finalQuestionIndex) {
+        alert("This is incorrect!");
+        currentQuestionIndex++;
+        generateQuizQuestion();
+    } else {
+        showscore();
+    }
+}
+
 // Ending Screen for the end of the ticker. Final message
 
 function showscore() {
@@ -170,17 +188,51 @@ function showscore() {
     savedHighscores.push(currentHighScore);
     localStorage.setItem("savedHighScores", JSON.stringify(savedHighScores));
     generateHighscores();
-
     
-
-
-// Ticker portion of the code Had AskBCS help with this portion
-tickerinterval = setInterval(function() {
-    timeLeft--;
-    quizTimer.textContent = "Time left: " + timeLeft;
-
-    if(timeLeft === 0) {
-        clearInterval(timerInterval);
-        showscore();
+// Clears the high score list, using the javascript during weekly lessons
+function generateHighscores() {
+    highscoreDisplayName.innerHTML = "";
+    highscoreDisplayScore.innerHTML = "";
+    var highscores = JSON.parse(localstorage.getItem("savedHighscores")) || [];
+    for (i = 0; i<highscores.length; i++) {
+        var newNameSpan = document.createElement("li");
+        var newScoreSpan = document.createElement("li");
+        newNameSpan.textContent = highscores[i].namne;
+        newScoreSpan.textContent = highscores[i].score;
+        highscoreDisplayName.approachChild(newNameSpan);
+        highscoreDisplayScore.approachChild(newScoreSpan);
     }
 }
+
+// only showing the highs score page 
+
+function showHighscore() {
+    startQuizDiv.style.display = "none";
+    gameoverDiv.style.display = "none";
+    highscoreContainer.style.display = "flex";
+    highscoreDiv.style.display = "block";
+    endGameBtns.style.display = "flex";
+
+    generateHighscores();
+}
+
+// Clear All high scores
+
+function clearscore() {
+    window.localstorage.clear();
+    highscoreDisplayName.textContent = "";
+    highscoreDisplayScore.textContent = "";
+}
+
+// Resets all the values and seems like it is starting new
+function replayQuiz() {
+    highscoreContainer.style.display = "none";
+    gameoverDiv.style.display = "none";
+    startQuizDiv.style.display = "none";
+    timeLeft: 120;
+    score = 0;
+    currentQuestionIndex = 0;
+}
+
+//Starts Quiz again
+startQuizButton.addEventListener("click", startQuiz);
