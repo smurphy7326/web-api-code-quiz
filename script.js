@@ -149,18 +149,29 @@ function showscore() {
 // the high score should go to another page, possibly fix later in notes
 // Ask BCS helped with this part
 
-submitScoreBtn.addEventListener("click", function highscore() {
+ if(highscoreInputname, value === "") {
     alert("Initials cannot be blank");
     return false;
-} else {
+}else{
     var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
     var currentUser = highscoreInputname.value.trim();
     var currentHighScore = {
         name : currentUser,
         score : score
-    },
-}
+    }
+};
+    
+    gameoverDiv.style.display = "none";
+    highscoreContainer.style.display = "flex";
+    highscoreDiv.style.display = "block";
+    endGameBtns.style.display = "flex";
 
+    // AskBCS was helpful with this part as well
+    savedHighscores.push(currentHighScore);
+    localStorage.setItem("savedHighScores", JSON.stringify(savedHighScores));
+    generateHighscores();
+
+    
 
 
 // Ticker portion of the code Had AskBCS help with this portion
