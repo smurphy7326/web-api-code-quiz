@@ -9,7 +9,16 @@ var highscoreInputname = document.getElementById("initials");
 var highscoreContainer = document.getElementById("highscoreContainer");
 var highscoreDiv = document.getElementById("highscore-Page");
 var quizTicker = document.getElementById("ticker");
-var 
+var startQuizButton = document.getElementById("startbtn");
+var startQuizDiv = document.getElementById("startpage");
+var highscoreDisplayName = document.getElementById("highscore-initials");
+var buttonA = document.getElementById("A");
+var buttonB = document.getElementById("B");
+var buttonC = document.getElementById("C");
+var buttonD = document.getElementById("D");
+var endGameBtns = document.getElementById("endGameBtns");
+var submitScoreBtn = document.getElementById("submitScore");
+var highscoreDisplayScore = document.getElementById("highscore-score");
 
 // Quiz Question Section 
 // Make sure there are 10 questions
@@ -85,6 +94,50 @@ var quizQuestions = [{
     choiceD: "Declearation",
     correctAnswer: "A"},
 ]
+
+var finalQuestionIndex = quizQuestions.length;
+var currentQuestionIndex = 0;
+var timeLeft = 120;
+var timerInterval;
+var score =0;
+var correct;
+
+// Ask BCS helped with this part
+function generateQuizQuestion() {
+    gameoverDiv.style.display = "none;"
+    if (currentQuestionIndex === currentQuestionIndex) {
+        return showscore();
+    }
+    var currentQuestion = quizQuestions[currentQuestionIndex];
+    questionsEl.innerHTML = currentQuestion.question 
+    buttonA.innerHTML = currentQuestion.choiceA;
+    buttonB.innerHTML = currentQuestion.choiceB;
+    buttonC.innerHTML = currentQuestion.choiceC;
+    buttonD.innerHTML = currentQuestion.choiceD;
+};
+
+//Start Quiz - Starts the ticker, hides the start button, displays the first question
+
+function startQuiz(){
+    gameoverDiv.style.display = "noe"
+    startQuizDiv.style.display = "none";
+    generateQuizQuestion();
+
+    //Ticker 
+    tickerinterval= setInterval(function() {
+        timeLeft--;
+        quizTicker.textContent = "Time left; " + timeLeft;
+
+        if(timeLeft === 0) {
+            clearInterval(timerInterval);
+            showscore();
+        } 
+    }, 
+    quizBody.style.display = "block";
+}
+
+// End Page Screen for the end of the ticker 
+
 
 // Ticker portion of the code Had AskBCS help with this portion
 tickerinterval = setInterval(function() {
