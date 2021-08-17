@@ -42,4 +42,8 @@
 * Started to work on the high score header section
 * Added a High score header section to make it look better
 
+### Version 1.8 - 
+* Added a high score section
+* Added a final score section in the CSS section
+* 
 
