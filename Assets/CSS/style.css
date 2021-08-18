@@ -43,10 +43,10 @@ input {
 button {
     display: inline-block;
     font-family: 'Times New Roman', Times, serif;
-    background-color: #5462d8;
+    background-color: #942ed1;
     border-radius: 10px;
     border: 3px double lightgrey;
-    color: rgb(138, 138, 138);
+    color: white;
     text-align: center;
     padding: 20px;
     width: 200px;
@@ -57,7 +57,7 @@ button {
 /* Button Hover Section */
 
 button:hover {
-    box-shadow: 4px 2px 7px rgba(25, 52, 202, 0.733);
+    box-shadow: 4px 2px 7px #b167dd
 }
 
 #startpage {
@@ -66,7 +66,7 @@ button:hover {
     align-items: center;
 }
 
-/* Ticker for the countdown */
+/* Timer for the countdown */
 
 #timer {
     font-family: 'Times New Roman', Times, serif;

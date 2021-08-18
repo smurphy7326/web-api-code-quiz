@@ -103,13 +103,13 @@ var score = 0;
 var correct;
 
 // Ask BCS helped with this part - Generates the questions and answers
-function generateQuizQuestion() {
+function generateQuizQuestion(){
     gameoverDiv.style.display = "none";
-    if (currentQuestionIndex === finalQuestionIndex) {
+    if (currentQuestionIndex === finalQuestionIndex){
         return showScore();
-    }
+    } 
     var currentQuestion = quizQuestions[currentQuestionIndex];
-    questionsEl.innerHTML = "<p>" + currentQuestion.question + "</p>"; 
+    questionsEl.innerHTML = "<p>" + currentQuestion.question + "</p>";
     buttonA.innerHTML = currentQuestion.choiceA;
     buttonB.innerHTML = currentQuestion.choiceB;
     buttonC.innerHTML = currentQuestion.choiceC;
@@ -222,22 +222,22 @@ function replayQuiz() {
 
 
 // Check Answer function
-function checkAnswer(answer) {
+function checkAnswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer;
-    
-    if (answer === correct && currentQuestionIndex !== finalQuestionIndex) {
-        score++;
-        alert("This is correct!");
-        currentQuestionIndex++;
-        generateQuizQuestion();
 
-// if the answer is incorrect
-    } else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex) {
-        alert("This is incorrect.")
+    if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
+        score++;
+        alert("That Is Correct!");
         currentQuestionIndex++;
         generateQuizQuestion();
-    } else {
-        showscore();
+        //display in the results div that the answer is correct.
+    }else if (answer !== correct && currentQuestionIndex !== finalQuestionIndex){
+        alert("That Is Incorrect.")
+        currentQuestionIndex++;
+        generateQuizQuestion();
+        //display in the results div that the answer is wrong.
+    }else{
+        showScore();
     }
 }
 

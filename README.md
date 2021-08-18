@@ -1,6 +1,7 @@
-# web-api-code-quiz
+# Web-Api-Code-Quiz
 
 ## Purpose
+The UCONN Coding Bootcamp assigned us a task to make a timed multiple choice quiz. The purpose of the quiz is to see how well we are learning the concepts we have been taught so far throughout the bootcamp. We were to make questions about the first few weeks, and have a scoreboard at the end as well in order to guage how we are doing compared to our peers. The questions were to be given and when an answer was chosen say whether it was correct or incorrect right there. At the end there would be an oppertunity for student to put their initials on the leaderboard to see how they are doing. 
 
 ### Version 1 - First Commit
 
@@ -36,22 +37,50 @@
 * Added the questions section to the javascript
 * Changed the javascript to reflect gameover and highscore
 
-### Version 1.7 - 
+### Version 1.7 - High Score Header
 * Changed the h3 header to highscore-header in style.css
 * Added a High Score Page Section
 * Started to work on the high score header section
 * Added a High score header section to make it look better
 
-### Version 1.8 - 
+### Version 1.8 - Finish CSS Section
 * Added a high score section
 * Added a final score section in the CSS section
 
-### Version 1.9 - 
+### Version 1.9 - Adding Questions
 * Worked on questions for the quiz
 
-### Version 1.15 - 
+### Version 1.10 - Added More Questions
+* Added more questions for the javascript section
+
+### Version 1.11 - Timer Interval Set
+* Set the timer for 120 seconds
+* Set some functions for the StartQuiz function
+
+### Version 1.12 -
+* Set the function for the show score section
+* Worked on the save high score section
+
+### Version 1.13 - JSON
+* Worked on the display for the hish score functions
+
+### Version 1.14 - Finishing Javascript
+* Worked on the check answer function
+* Generate high scores function
+* Replay quiz function
+* Clear score function
+
+### Version 1.15 - Fixed Bugs
 * Changed HTML to be more streamline
 * Moved some things around in Javascript for a more streamline appearance
 * Changed spelling errors and incorrect statements
 * Changed the style in CSS with px to rem in some places
+
+### Version 1.16 - Polishing
+* Adjusted the HTML so the questions would work
+* Made the CSS more streamline
+* Made the Javascript more streamline
+* Arranged the folders to make things easier to find
+* Updated the README with text and pictures
+
 
