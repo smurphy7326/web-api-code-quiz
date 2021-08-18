@@ -97,7 +97,7 @@ var quizQuestions = [{
 // Other variables
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 120;
+var timeLeft = 40;
 var timerInterval;
 var score = 0;
 var correct;
@@ -215,7 +215,7 @@ function replayQuiz() {
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "flex";
-    timeLeft = 120;
+    timeLeft = 40;
     score = 0;
     currentQuestionIndex = 0;
 }
