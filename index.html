@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Code Quiz Module</title>
+    <title>API Code Quiz Challenge</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
-
-        <header id="starterpage">
+        <div id="startpage">
             <h2> This quiz will test your knowledge of various coding and web design concepts</h2>
         <button id ="startbtn">Start Coding Quiz</button>
         <button id="StartPageHighScore" onclick="showHighscore()">High Scores</button>
-        </header>
+        </div>
 
-        <section id="quiz">
-            <div id="ticker"> Time left: </div>
-            <div id="questions"><p> Questions Proxy</p></div>
-                <button id="A" onclick="checkanswer('A')">A</button>
-                <button id="B" onclick="checkanswer('B')">B</button>
-                <button id="C" onclick="checkanswer('C')">C</button>
-                <button id="D" onclick="checkanswer('D')">D</button>
+        <div id="quiz">
+            <div id="timer"> Time left: </div>
+            <div id="questions"><p>Questions Placeholder</p></div>
+                <button id="a" onclick="checkanswer('a')">A</button>
+                <button id="b" onclick="checkanswer('b')">B</button>
+                <button id="c" onclick="checkanswer('c')">C</button>
+                <button id="d" onclick="checkanswer('d')">D</button>
             <div id="result"></div>
-        </section>
+        </div>
 
-        <section id="gameover">
+        <div id="gameover">
 
             <div id="finalScore"></div>
-            <input type="text" size= "30" placeholder="Enter your initials for high score" name="initials" id="initials"/>
+            <input type="text" size= "40" placeholder="Enter your initials for high score" name="initials" id="initials"/>
             <button id="submitScore">Submit Score</button>
-        </section>
+        </div>
 
         <div id=highscoreContainer>
         <div id="high-scorePage">
             <div id="highscore-header">
-                <h3>User Initials Score</h3>
+                <h3>User Initials</h3>
+                <h3>Score</h3>
             </div>
-        </div>
+
             <div id = "highscore-initials"></div>
             <div id = "highscore-score"></div>
         </div>
@@ -49,11 +49,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html>
-    
-
-
-
-
-
 </html>

@@ -49,5 +49,9 @@
 ### Version 1.9 - 
 * Worked on questions for the quiz
 
-
+### Version 1.15 - 
+* Changed HTML to be more streamline
+* Moved some things around in Javascript for a more streamline appearance
+* Changed spelling errors and incorrect statements
+* Changed the style in CSS with px to rem in some places
 
