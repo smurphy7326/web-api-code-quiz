@@ -84,3 +84,10 @@ The UCONN Coding Bootcamp assigned us a task to make a timed multiple choice qui
 * Updated the README with text and pictures
 
 
+![image](./assets/images/password-generator-webpage.jpg)
+
+![image](./assets/images/password-generator-webpage.jpg)
+
+![image](./assets/images/password-generator-webpage.jpg)
+
+[Web-API](https://smurphy7326.github.io/javascript-password-generator/)
