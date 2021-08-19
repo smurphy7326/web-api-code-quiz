@@ -1,5 +1,5 @@
 //Javascript section
-// Different HTML elements to be changed
+// Different HTML elements
 var quizBody = document.getElementById("quiz");
 var resultsEl = document.getElementById("result");
 var finalScore = document.getElementById("finalScore");
