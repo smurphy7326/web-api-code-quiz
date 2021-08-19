@@ -1,11 +1,11 @@
 //Javascript section
-// Different HTML elements to be changed
+// Different HTML elements
 var quizBody = document.getElementById("quiz");
 var resultsEl = document.getElementById("result");
-var finalScoreEl = document.getElementById("finalScore");
+var finalScore = document.getElementById("finalScore");
 var gameoverDiv = document.getElementById("gameover");
 var questionsEl = document.getElementById("questions");
-var highscoreInputname = document.getElementById("initials");
+var highscoreInputName = document.getElementById("initials");
 var highscoreContainer = document.getElementById("highscoreContainer");
 var highscoreDiv = document.getElementById("high-scorePage");
 var quizTimer = document.getElementById("timer");
@@ -130,7 +130,7 @@ function startQuiz() {
 
         if(timeLeft === 0) {
             clearInterval(timerInterval);
-            showScore();
+            showscore();
         } 
     }, 1000);
     quizBody.style.display = "block";
@@ -138,52 +138,55 @@ function startQuiz() {
 
 // Ending Screen for the end of the timer.
 
-function showScore(){
+function showscore() {
     quizBody.style.display = "none"
     gameoverDiv.style.display = "flex";
     clearInterval(timerInterval);
     highscoreInputName.value = "";
-    finalScoreEl.innerHTML = "You got " + score + " out of " + quizQuestions.length + " correct!";
+    finalScoreEl.innerHTML = "You got " + score + "out of" + quizQuestions.length + " correct!";
 }
 
 // the high score should go to another page, possibly fix later in notes
 // Ask BCS helped with this part
 
-submitScoreBtn.addEventListener("click", function highscore(){  
-    if(highscoreInputName.value === "") {
-        alert("Initials cannot be blank");
-        return false;
-    }else{
-        var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
-        var currentUser = highscoreInputName.value.trim();
-        var currentHighscore = {
-            name : currentUser,
-            score : score
-        };
-    
-        gameoverDiv.style.display = "none";
-        highscoreContainer.style.display = "flex";
-        highscoreDiv.style.display = "block";
-        endGameBtns.style.display = "flex";
-        
-        savedHighscores.push(currentHighscore);
-        localStorage.setItem("savedHighscores", JSON.stringify(savedHighscores));
-        generateHighscores();
-    }   
-});
+submitScoreBtn.addEventListener("click", function highscore() {
+
+    if(highscoreInputName, value === "") {
+       alert("Initials cannot be blank");
+       return false;
+   }else{
+       var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
+       var currentUser = highscoreInputName.value.trim();
+       var currentHighScore = {
+           name : currentUser,
+           score : score
+       };
+   
+       gameoverDiv.style.display = "none";
+       highscoreContainer.style.display = "flex";
+       highscoreDiv.style.display = "block";
+       endGameBtns.style.display = "flex";
+   
+       // AskBCS was helpful with this part as well
+       savedHighscores.push(currentHighScore);
+       localStorage.setItem("savedHighScores", JSON.stringify(savedHighScores));
+       generateHighscores();
+       }
+   });
+
 
 // Clears the high score list, using the javascript during weekly lessons
-function generateHighscores(){
+function generateHighscores() {
     highscoreDisplayName.innerHTML = "";
     highscoreDisplayScore.innerHTML = "";
-    var highscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
-    for (i=0; i<highscores.length; i++){
+    var highscores = JSON.parse(localstorage.getItem("savedHighscores")) || [];
+    for (i = 0; i < highscores.length; i++) {
         var newNameSpan = document.createElement("li");
         var newScoreSpan = document.createElement("li");
         newNameSpan.textContent = highscores[i].name;
         newScoreSpan.textContent = highscores[i].score;
-        highscoreDisplayName.appendChild(newNameSpan);
-        highscoreDisplayScore.appendChild(newScoreSpan);
+        highscoreDisplayName.approachChild(newNameSpan);
+        highscoreDisplayScore.approachChild(newScoreSpan);
     }
 }
 
@@ -195,6 +198,7 @@ function showHighscore() {
     highscoreContainer.style.display = "flex";
     highscoreDiv.style.display = "block";
     endGameBtns.style.display = "flex";
+
     generateHighscores();
 }
 
@@ -207,7 +211,7 @@ function clearscore() {
 }
 
 // Resets all the values and seems like it is starting new
-function replayQuiz(){
+function replayQuiz() {
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "flex";
@@ -220,6 +224,7 @@ function replayQuiz(){
 // Check Answer function
 function checkAnswer(answer){
     correct = quizQuestions[currentQuestionIndex].correctAnswer;
+
     if (answer === correct && currentQuestionIndex !== finalQuestionIndex){
         score++;
         alert("That Is Correct!");

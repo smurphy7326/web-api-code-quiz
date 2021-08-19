@@ -70,7 +70,7 @@ button:hover {
 
 #timer {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgba(248, 56, 239, 0.699);
+    background-color: rgba(65, 84, 252, 0.699);
     color: white;
     font-size: x-large;
     text-shadow: .5px .5px black;
@@ -108,7 +108,7 @@ button:hover {
     border-color: rgba(217, 219, 233, 0.616);
     border-bottom-style: groove;
     padding-bottom: .4rem;
-    background: plum;
+    background: lightskyblue;
 }
 
 /* High Score Header Section*/
@@ -118,7 +118,7 @@ button:hover {
     justify-content: space-around;
     border-bottom-style: outset;
     margin-bottom: .5rem;
-    background-color: #d854d8;
+    background-color: #5462d8;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
