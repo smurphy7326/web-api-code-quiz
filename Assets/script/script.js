@@ -5,7 +5,7 @@ var resultsEl = document.getElementById("result");
 var finalScore = document.getElementById("finalScore");
 var gameoverDiv = document.getElementById("gameover");
 var questionsEl = document.getElementById("questions");
-var highscoreInputname = document.getElementById("initials");
+var highscoreInputName = document.getElementById("initials");
 var highscoreContainer = document.getElementById("highscoreContainer");
 var highscoreDiv = document.getElementById("high-scorePage");
 var quizTimer = document.getElementById("timer");
@@ -142,7 +142,7 @@ function showscore() {
     quizBody.style.display = "none"
     gameoverDiv.style.display = "flex";
     clearInterval(timerInterval);
-    highscoreInputname.value = "";
+    highscoreInputName.value = "";
     finalScoreEl.innerHTML = "You got " + score + "out of" + quizQuestions.length + " correct!";
 }
 
@@ -151,12 +151,12 @@ function showscore() {
 
 submitScoreBtn.addEventListener("click", function highscore() {
 
-    if(highscoreInputname, value === "") {
+    if(highscoreInputName, value === "") {
        alert("Initials cannot be blank");
        return false;
    }else{
        var savedHighscores = JSON.parse(localStorage.getItem("savedHighscores")) || [];
-       var currentUser = highscoreInputname.value.trim();
+       var currentUser = highscoreInputName.value.trim();
        var currentHighScore = {
            name : currentUser,
            score : score
